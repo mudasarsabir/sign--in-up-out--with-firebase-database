@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/w3.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-auth.js"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/index.js"></script>
+
+</head>
+
+<body class="bg-dark">
+	<center>
+	<div class="container">
+    	<div class="container  col-lg-10 mt-4 pb-2 shadow-lg bg-warning p-3 mb-4 rounded" id="formContainer">
+        	<div id="header"></div>
+            
+            <!--<a class="row ml-0">
+            	<h2 class="font-weight-bold text-success border rounded-left">LOG|</h2>
+                <h2 class="font-weight-bold bg-primary text-white rounded-right"> |File</h2>
+            </a>-->
+             
+            <div class="col-12 rounded shadow-lg p-2 mb-3 bg-primary text-light">
+                <h3>
+                 <i class="material-icons">fingerprint</i>
+                 SIGN <i class="fa fa-long-arrow-right"></i>
+                 In <i class="fa fa-check-square-o" aria-hidden="true"></i> |
+                 UP <i class="fa fa-check-square-o" aria-hidden="true"></i> | OUT
+                 <i class="fa fa-check-square-o" aria-hidden="true"></i></h3>
+            </div>
+                <input type="email" name="" id="email" class="bg-light btn form-control shadow-lg" placeholder="@email" />
+                <input type="password" name="" id="password" class="bg-light btn form-control mt-2 shadow-lg" placeholder="password" />
+            <div class="btn-group mt-3 rounded shadow-lg" role="group">
+                <button onClick="signin()" id="signin" class="btn btn-primary">
+                <i class="fa fa-sign-in fa-2x" aria-hidden="true"></i>
+                SIGN IN</button>
+                <button onClick="signup()" id="sigup" class="btn btn-success">
+                <i class="fa fa-user-plus fa-2x" aria-hidden="true"></i>
+                SIGN UP</button>
+                <button onClick="signout()" id="signout" class="btn btn-danger">
+                <i class="fa fa-sign-out fa-2x" aria-hidden="true"></i>
+                SIGN OUT</button>
+            </div>
+        </div>
+    </div>
+    </center>
+
+        
+        
+</body>
+</html>
